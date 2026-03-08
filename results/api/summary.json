@@ -1,0 +1,79 @@
+{
+  "run_timestamp": "2026-03-08 09:01:16 UTC",
+  "dataset": "combined-prompts-v3.json",
+  "dataset_size": 315,
+  "models": [
+    {
+      "model": "zazaman/finetuned-modernbert-large",
+      "status": "ok",
+      "source": "existing_results",
+      "elapsed_sec": 15.48,
+      "n": 315,
+      "accuracy": 0.926984126984127,
+      "precision_1": 0.9298245614035088,
+      "recall_1": 0.8760330578512396,
+      "f1_1": 0.902127659574468,
+      "tp": 106,
+      "tn": 186,
+      "fp": 8,
+      "fn": 15,
+      "rank_by_f1_1": 1
+    },
+    {
+      "model": "openai/gpt-oss-safeguard-20b",
+      "status": "ok",
+      "elapsed_sec": 256.07,
+      "n": 315,
+      "accuracy": 0.8444444444444444,
+      "precision_1": 0.95,
+      "recall_1": 0.628099173553719,
+      "f1_1": 0.7562189054726368,
+      "tp": 76,
+      "tn": 190,
+      "fp": 4,
+      "fn": 45,
+      "rank_by_f1_1": 2
+    },
+    {
+      "model": "meta-llama/llama-guard-4-12b",
+      "status": "ok",
+      "elapsed_sec": 215.56,
+      "n": 315,
+      "accuracy": 0.8,
+      "precision_1": 0.9833333333333333,
+      "recall_1": 0.48760330578512395,
+      "f1_1": 0.6519337016574585,
+      "tp": 59,
+      "tn": 193,
+      "fp": 1,
+      "fn": 62,
+      "rank_by_f1_1": 3
+    },
+    {
+      "model": "nvidia/nemoguard-jailbreak-detect",
+      "status": "ok",
+      "elapsed_sec": 85.0,
+      "n": 315,
+      "accuracy": 0.6190476190476191,
+      "precision_1": 1.0,
+      "recall_1": 0.008264462809917356,
+      "f1_1": 0.01639344262295082,
+      "tp": 1,
+      "tn": 194,
+      "fp": 0,
+      "fn": 120,
+      "rank_by_f1_1": 4
+    }
+  ],
+  "notes": {
+    "finetuned-modernbert_source": "final_comparison_combined_prompts_v3\\per_model_logs\\dcarpintero__finetuned-modernbert_guard_large.jsonl",
+    "groq_models": [
+      "openai/gpt-oss-safeguard-20b",
+      "meta-llama/llama-guard-4-12b"
+    ],
+    "nvidia_models": [
+      "nvidia/nemoguard-jailbreak-detect"
+    ],
+    "groq_key_count": 3
+  }
+}

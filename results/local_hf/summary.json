@@ -1,0 +1,141 @@
+{
+  "run_timestamp": "2026-03-07 23:58:38 UTC",
+  "dataset": "combined-prompts-v3.json",
+  "dataset_size": 315,
+  "device": "cuda",
+  "prompt_guard_86m_positive": "all_attacks",
+  "results": [
+    {
+      "model": "zazaman/finetuned-modernbert-large",
+      "tokenizer_used": "answerdotai/ModernBERT-large",
+      "id2label": {
+        "0": "safe",
+        "1": "unsafe"
+      },
+      "positive_ids": [
+        1
+      ],
+      "status": "ok",
+      "load_sec": 8.29,
+      "infer_sec": 7.19,
+      "elapsed_sec": 15.48,
+      "samples_per_sec": 20.3482,
+      "n": 315,
+      "accuracy": 0.926984126984127,
+      "precision_1": 0.9298245614035088,
+      "recall_1": 0.8760330578512396,
+      "f1_1": 0.902127659574468,
+      "tp": 106,
+      "tn": 186,
+      "fp": 8,
+      "fn": 15,
+      "rank_by_f1_1": 1
+    },
+    {
+      "model": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "tokenizer_used": "meta-llama/Llama-Prompt-Guard-2-86M",
+      "id2label": {
+        "0": "LABEL_0",
+        "1": "LABEL_1"
+      },
+      "positive_ids": [
+        1
+      ],
+      "status": "ok",
+      "load_sec": 6.47,
+      "infer_sec": 3.44,
+      "elapsed_sec": 10.84,
+      "samples_per_sec": 29.0674,
+      "n": 315,
+      "accuracy": 0.7714285714285715,
+      "precision_1": 0.9803921568627451,
+      "recall_1": 0.4132231404958678,
+      "f1_1": 0.5813953488372093,
+      "tp": 50,
+      "tn": 193,
+      "fp": 1,
+      "fn": 71,
+      "rank_by_f1_1": 4
+    },
+    {
+      "model": "meta-llama/Prompt-Guard-86M",
+      "tokenizer_used": "meta-llama/Prompt-Guard-86M",
+      "id2label": {
+        "0": "BENIGN",
+        "1": "INJECTION",
+        "2": "JAILBREAK"
+      },
+      "positive_ids": [
+        1,
+        2
+      ],
+      "status": "ok",
+      "load_sec": 5.31,
+      "infer_sec": 2.71,
+      "elapsed_sec": 8.02,
+      "samples_per_sec": 39.2554,
+      "n": 315,
+      "accuracy": 0.42857142857142855,
+      "precision_1": 0.4019933554817276,
+      "recall_1": 1.0,
+      "f1_1": 0.5734597156398105,
+      "tp": 121,
+      "tn": 14,
+      "fp": 180,
+      "fn": 0,
+      "rank_by_f1_1": 5
+    },
+    {
+      "model": "vijil/mbert-prompt-injection",
+      "tokenizer_used": "answerdotai/ModernBERT-base",
+      "id2label": {
+        "0": "0",
+        "1": "1"
+      },
+      "positive_ids": [
+        1
+      ],
+      "status": "ok",
+      "load_sec": 2.9,
+      "infer_sec": 2.43,
+      "elapsed_sec": 5.36,
+      "samples_per_sec": 58.8006,
+      "n": 315,
+      "accuracy": 0.8063492063492064,
+      "precision_1": 0.8409090909090909,
+      "recall_1": 0.6115702479338843,
+      "f1_1": 0.7081339712918661,
+      "tp": 74,
+      "tn": 180,
+      "fp": 14,
+      "fn": 47,
+      "rank_by_f1_1": 3
+    },
+    {
+      "model": "protectai/deberta-v3-base-prompt-injection-v2",
+      "tokenizer_used": "protectai/deberta-v3-base-prompt-injection-v2",
+      "id2label": {
+        "0": "SAFE",
+        "1": "INJECTION"
+      },
+      "positive_ids": [
+        1
+      ],
+      "status": "ok",
+      "load_sec": 3.67,
+      "infer_sec": 2.54,
+      "elapsed_sec": 6.21,
+      "samples_per_sec": 50.6902,
+      "n": 315,
+      "accuracy": 0.8253968253968254,
+      "precision_1": 0.7894736842105263,
+      "recall_1": 0.743801652892562,
+      "f1_1": 0.7659574468085106,
+      "tp": 90,
+      "tn": 170,
+      "fp": 24,
+      "fn": 31,
+      "rank_by_f1_1": 2
+    }
+  ]
+}
