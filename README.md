@@ -36,9 +36,9 @@ Primary model in this repo:
 - `scripts/benchmark_v3.py`
   - Local NeMo Guardrails benchmark (Qwen 2.5:3b via Ollama).
 - `results/local_hf/*`
-  - Local HF benchmark outputs.
+  - Local HF benchmark outputs, including per-model prompt logs in `results/local_hf/per_model_logs/*.jsonl`.
 - `results/api/*`
-  - API benchmark outputs.
+  - API benchmark outputs, including per-model prompt logs in `results/api/per_model_logs/*.jsonl`.
 - `results/nemo_guardrails/*`
   - Externally generated NeMo Guardrails run outputs (included as-is).
 
@@ -83,6 +83,7 @@ Outputs:
 
 - `results/local_hf/summary.json`
 - `results/local_hf/FINAL_COMPARISON_REPORT.md`
+- `results/local_hf/per_model_logs/*.jsonl`
 
 ### 2) API benchmark (Groq + NVIDIA)
 
@@ -107,6 +108,7 @@ Outputs:
 
 - `results/api/summary.json`
 - `results/api/API_COMPARISON_REPORT.md`
+- `results/api/per_model_logs/*.jsonl`
 
 ### 3) NeMo Guardrails local run
 
